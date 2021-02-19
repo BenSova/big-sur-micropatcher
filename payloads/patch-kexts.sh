@@ -55,6 +55,9 @@ else
     elif [ -d "/Volumes/Install macOS Big Sur Beta" ]
     then
         IMGVOL="/Volumes/Install macOS Big Sur Beta"
+    elif [ -d ~/.patched-sur/big-sur-micropatcher/payloads ]
+    then
+        IMGVOL=~/.patched-sur/big-sur-micropatcher/payloads
     else
         # if this is inaccurate, there's an error check in the next top-level
         # if-then block which will catch it and do the right thing
